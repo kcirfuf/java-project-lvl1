@@ -3,10 +3,24 @@ import  java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
-        System.out.println("Welcome to the Brain Games!");
+        User player = new User();
+        String gamesFeatures = "Please enter the game number and press Enter.\n"
+                + "2 - Even\n"
+                + "1 - Greet\n"
+                + "0 - Exit\n";
+        System.out.println(gamesFeatures);
         Scanner sc = new Scanner(System.in);
-        System.out.println("May I have your name?");
-        String name = sc.nextLine();
-        System.out.println("Hello, " + name + "!");
+        String userChoice = sc.nextLine();
+        switch (userChoice) {
+            case "2":
+                Cli.greeting(player);
+                Even.even(player);
+            case "1":
+                Cli.greeting(player);
+            case "0":
+                System.exit(0);
+            default:
+                System.exit(0);
+        }
     }
 }
