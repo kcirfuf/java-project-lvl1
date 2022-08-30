@@ -1,5 +1,7 @@
 ### Even game:
 [Example](https://asciinema.org/a/645nJrY4a8O8QkikO6h2pBmea)
+### Calc game:
+[Example](https://asciinema.org/a/rOZeuRxid0IGSVMUuFekP1ePQ)
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/kcirfuf/java-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/kcirfuf/java-project-lvl1/actions)
 
