@@ -5,6 +5,7 @@ public class App {
     public static void main(String[] args) {
         User player = new User();
         String gamesFeatures = "Please enter the game number and press Enter.\n"
+                + "4 - GCD\n"
                 + "3 - Calc\n"
                 + "2 - Even\n"
                 + "1 - Greet\n"
@@ -13,6 +14,10 @@ public class App {
         Scanner sc = new Scanner(System.in);
         String userChoice = sc.nextLine();
         switch (userChoice) {
+            case "4":
+                GCD gcd = new GCD();
+                Engine.runGame(player, gcd);
+                break;
             case "3":
                 Calc calc = new Calc();
                 Engine.runGame(player, calc);

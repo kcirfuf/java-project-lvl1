@@ -1,9 +1,6 @@
 package hexlet.code;
 
 public final class Even implements Game {
-
-    public static final byte MAX_SUCCESS_GAMES_COUNT = 3;
-    public static final byte UPPERBOUND = 25;
     private static final String CONDITION = "Answer 'yes' if number even otherwise answer 'no'.";
 
     public String run() {

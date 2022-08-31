@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Engine {
     private static final byte MAX_SUCCESS_GAMES_COUNT = 3;
     private static final byte UPPERBOUND = 12;
+    private static final byte LOWERBOUND = 1;
     private static final Random RAND = new Random();
     public static void runGame(User player, Game game) {
         Cli.greeting(player);
@@ -31,7 +32,7 @@ public class Engine {
     }
 
     public static int generateRandomNumber() {
-        int intRandom = RAND.nextInt(UPPERBOUND);
+        int intRandom = RAND.nextInt(LOWERBOUND, UPPERBOUND);
         return intRandom;
     }
 }
