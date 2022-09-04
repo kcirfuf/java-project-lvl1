@@ -36,6 +36,7 @@ public final class Progression implements Game {
         }
         return question;
     }
+
     public String getGameCondition() {
         return CONDITION;
     }

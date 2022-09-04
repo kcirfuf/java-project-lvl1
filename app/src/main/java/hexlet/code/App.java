@@ -5,16 +5,21 @@ public class App {
     public static void main(String[] args) {
         User player = new User();
         String gamesFeatures = "Please enter the game number and press Enter.\n"
-                + "5 - Progression\n"
-                + "4 - GCD\n"
-                + "3 - Calc\n"
-                + "2 - Even\n"
+                + "0 - Exit\n"
                 + "1 - Greet\n"
-                + "0 - Exit\n";
+                + "2 - Even\n"
+                + "3 - Calc\n"
+                + "4 - GCD\n"
+                + "5 - Progression\n"
+                + "6 - Prime\n";
         System.out.println(gamesFeatures);
         Scanner sc = new Scanner(System.in);
         String userChoice = sc.nextLine();
         switch (userChoice) {
+            case "6":
+                Prime prime = new Prime();
+                Engine.runGame(player, prime);
+                break;
             case "5":
                 Progression progression = new Progression();
                 Engine.runGame(player, progression);
