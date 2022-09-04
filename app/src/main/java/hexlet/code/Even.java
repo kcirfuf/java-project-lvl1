@@ -2,9 +2,10 @@ package hexlet.code;
 
 public final class Even implements Game {
     private static final String CONDITION = "Answer 'yes' if number even otherwise answer 'no'.";
-
+    private static final byte UPPERBOUND = 12;
+    private static final byte LOWERBOUND = 1;
     public String run() {
-        int intRandom = Engine.generateRandomNumber();
+        int intRandom = Engine.generateRandomNumber(LOWERBOUND, UPPERBOUND);
         System.out.println("Question: " + intRandom);
         return division(intRandom) ? "yes" : "no";
     }

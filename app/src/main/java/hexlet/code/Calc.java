@@ -4,10 +4,12 @@ import java.util.Random;
 
 public final class Calc implements Game {
     private static final String CONDITION = "What is the result of the expression?";
+    private static final byte UPPERBOUND = 12;
+    private static final byte LOWERBOUND = 1;
     private final String[] operations = {"*", "+", "-"};
     public String run() {
-        int intRandomFirst = Engine.generateRandomNumber();
-        int intRandomSecond = Engine.generateRandomNumber();
+        int intRandomFirst = Engine.generateRandomNumber(LOWERBOUND, UPPERBOUND);
+        int intRandomSecond = Engine.generateRandomNumber(LOWERBOUND, UPPERBOUND);
         String operation = getRandomElement(operations);
         System.out.println("Question: " + intRandomFirst + " " + operation + " " + intRandomSecond);
         int tmpResult = 0;

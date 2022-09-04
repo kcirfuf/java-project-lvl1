@@ -5,9 +5,9 @@ import java.util.Scanner;
 
 public class Engine {
     private static final byte MAX_SUCCESS_GAMES_COUNT = 3;
+    private static final Random RAND = new Random();
     private static final byte UPPERBOUND = 12;
     private static final byte LOWERBOUND = 1;
-    private static final Random RAND = new Random();
     public static void runGame(User player, Game game) {
         Cli.greeting(player);
         System.out.println(game.getGameCondition());
@@ -31,6 +31,10 @@ public class Engine {
         return scEngine.nextLine();
     }
 
+    public static int generateRandomNumber(int lowerBound, int upperBound) {
+        int intRandom = RAND.nextInt(lowerBound, upperBound);
+        return intRandom;
+    }
     public static int generateRandomNumber() {
         int intRandom = RAND.nextInt(LOWERBOUND, UPPERBOUND);
         return intRandom;

@@ -4,6 +4,8 @@
 [Example](https://asciinema.org/a/rOZeuRxid0IGSVMUuFekP1ePQ)
 ### GDC game:
 [Example](https://asciinema.org/a/til5Cr3dm95QMhg7GTdd8dsu5)
+### Progression game:
+[Example](https://asciinema.org/a/NL7dMxbkyarBxrW3en81zkBDT)
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/kcirfuf/java-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/kcirfuf/java-project-lvl1/actions)
 
