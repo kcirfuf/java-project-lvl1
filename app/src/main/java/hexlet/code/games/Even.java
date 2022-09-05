@@ -1,4 +1,6 @@
-package hexlet.code;
+package hexlet.code.games;
+
+import hexlet.code.Engine;
 
 public final class Even implements Game {
     private static final String CONDITION = "Answer 'yes' if number even otherwise answer 'no'.";

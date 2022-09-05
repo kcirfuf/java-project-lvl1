@@ -1,6 +1,8 @@
-package hexlet.code;
+package hexlet.code.games;
 
-public final class Prime implements Game{
+import hexlet.code.Engine;
+
+public final class Prime implements Game {
     private static final String CONDITION = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
     private static final byte UPPERBOUND = 100;
     private static final byte LOWERBOUND = 1;
