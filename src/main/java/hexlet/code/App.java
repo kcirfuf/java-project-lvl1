@@ -47,7 +47,7 @@ public class App {
                 break;
             case "0":
             default:
-                System.exit(0);
+                return;
         }
     }
 }

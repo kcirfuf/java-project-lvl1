@@ -17,7 +17,7 @@ public class Engine {
                 countOfGames++;
             } else {
                 System.out.println(userAnswer + " is wrong answer ;(. Correct answer was " + rightAnswer);
-                System.out.println("Let's try again, " + player.getName());
+                System.out.println("Let's try again, " + player.getName() + "!");
                 return;
             }
         }
