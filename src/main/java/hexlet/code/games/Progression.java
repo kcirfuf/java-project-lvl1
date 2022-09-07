@@ -3,8 +3,8 @@ import hexlet.code.Utils;
 
 public final class Progression implements Game {
     private static final byte PROGRESSION_ELEMENTS_COUNT = 10;
-    private static final byte LOWER_BOUND_FOR_QUESTION = 1;
-    private static final byte UPPER_BOUND_FOR_QUESTION = 10;
+    private static final byte LOWER_BOUND_FOR_QUESTION = 0;
+    private static final byte UPPER_BOUND_FOR_QUESTION = 9;
     private static final String CONDITION = "What number is missing in the progression?";
     private String question = "";
 
@@ -31,7 +31,7 @@ public final class Progression implements Game {
     }
 
     public void setGameQuestion(int[] progression, int randomElement) {
-        String tmpQuestion = "Question: ";
+        String tmpQuestion = "Question:";
         for (int i = 0; i < progression.length; i++) {
             if (progression[i] == progression[randomElement]) {
                 tmpQuestion = tmpQuestion + " ..";
