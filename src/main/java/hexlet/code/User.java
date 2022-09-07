@@ -1,4 +1,4 @@
-package hexlet.code.games;
+package hexlet.code;
 
 public final class User {
     private String name;

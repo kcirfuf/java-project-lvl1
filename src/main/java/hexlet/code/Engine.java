@@ -1,7 +1,6 @@
 package hexlet.code;
 
 import hexlet.code.games.Game;
-import hexlet.code.games.User;
 
 import java.util.Random;
 import java.util.Scanner;
